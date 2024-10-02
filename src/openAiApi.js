@@ -16,7 +16,7 @@ export async function initChatbot(messages){
 
     await axios.post(POST_COMPLETITION_URL, body, {
         headers: {
-            Authorization: "Bearer sk-R-kSXLycB0-M9J2ubPI08PKFf7bjMWmN_Mj7Qs-sX6T3BlbkFJA7HYf_Gfod6JeDakMzfjEC8DTwqH1Rz-iXbcUrhkQA"
+            Authorization: "Bearer "+process.env.REACT_APP_OPEN_AI_API_KEY
         }
     })
         .then((response) => {
@@ -47,7 +47,7 @@ export async function sendNewMessage(messages, newMessage){
 
     await axios.post(POST_COMPLETITION_URL, body, {
         headers: {
-            Authorization: "Bearer sk-R-kSXLycB0-M9J2ubPI08PKFf7bjMWmN_Mj7Qs-sX6T3BlbkFJA7HYf_Gfod6JeDakMzfjEC8DTwqH1Rz-iXbcUrhkQA"
+            Authorization: "Bearer "+process.env.REACT_APP_OPEN_AI_API_KEY
         }
     })
         .then((response) => {
