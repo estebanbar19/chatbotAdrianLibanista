@@ -16,7 +16,7 @@ export async function initChatbot(messages){
 
     await axios.post(POST_COMPLETITION_URL, body, {
         headers: {
-            Authorization: "Bearer sk-Ac7PH2fOqjTcA5raxcqTuxNTGrrfCtThY7XZ6u964QT3BlbkFJl-r-jEU2asyJ9-a9-UqCQvieq8mF-Swcypi8XisBQA"
+            Authorization: "Bearer sk-jsPJoGDW8Ha3RtPVgCr5Yotz6KDXIqRSGDvj9m6mOjT3BlbkFJ0fF4jHkbW81Ug_N2NPfCZ8VpSGQ2_AGANh0T4l4BwA"
         }
     })
         .then((response) => {
@@ -47,7 +47,7 @@ export async function sendNewMessage(messages, newMessage){
 
     await axios.post(POST_COMPLETITION_URL, body, {
         headers: {
-            Authorization: "Bearer sk-Ac7PH2fOqjTcA5raxcqTuxNTGrrfCtThY7XZ6u964QT3BlbkFJl-r-jEU2asyJ9-a9-UqCQvieq8mF-Swcypi8XisBQA"
+            Authorization: "Bearer sk-jsPJoGDW8Ha3RtPVgCr5Yotz6KDXIqRSGDvj9m6mOjT3BlbkFJ0fF4jHkbW81Ug_N2NPfCZ8VpSGQ2_AGANh0T4l4BwA"
         }
     })
         .then((response) => {
