@@ -22,7 +22,7 @@ function App() {
     });
   }
 
-  if(messages.length == 2){
+  if(messages.length === 2){
     init();
   }
 
